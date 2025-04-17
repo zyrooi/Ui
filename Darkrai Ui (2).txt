@@ -245,7 +245,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.4,true)
 			else
 				uihide = false
-				Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+				Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
 			end
 		end
 	end)
