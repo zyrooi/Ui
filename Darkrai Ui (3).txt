@@ -973,33 +973,28 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 		end
 
 		function main:Seperator(text)
-local Seperator = Instance.new("Frame")
-local Sep1 = Instance.new("Frame")
-local Sep2 = Instance.new("TextLabel")
+    local Seperator = Instance.new("Frame")
+    local Sep2 = Instance.new("TextLabel")
 
-Seperator.Name = "Seperator"
-Seperator.Parent = MainFramePage
-Seperator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Seperator.BackgroundTransparency = 1.000
-Seperator.Size = UDim2.new(0, 0, 0, 20)
+    Seperator.Name = "Seperator"
+    Seperator.Parent = MainFramePage
+    Seperator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Seperator.BackgroundTransparency = 1.000
+    Seperator.Size = UDim2.new(1, 0, 0, 20)
 
-Sep1.Name = "Sep1"
-Sep1.Parent = Seperator
-Sep1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sep1.BackgroundTransparency = 1.000
-Sep1.Size = UDim2.new(0, 0, 0, 0)
-
-Sep2.Name = "Sep2"
-Sep2.Parent = Seperator
-Sep2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Sep2.BackgroundTransparency = 1.000
-Sep2.Position = UDim2.new(0, 185, 0, 0)
-Sep2.Size = UDim2.new(0, 100, 0, 20)
-Sep2.Font = Enum.Font.GothamSemibold
-Sep2.Text = text
-Sep2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Sep2.TextSize = 16.000
-		end
+    Sep2.Name = "Sep2"
+    Sep2.Parent = Seperator
+    Sep2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+    Sep2.BackgroundTransparency = 1.000
+    Sep2.Position = UDim2.new(0, 0, 0, 0)
+    Sep2.Size = UDim2.new(1, 0, 0, 20)
+    Sep2.Font = Enum.Font.GothamBold
+    Sep2.Text = text
+    Sep2.TextColor3 = Color3.fromRGB(255, 255, 255)
+    Sep2.TextSize = 16.000
+    Sep2.TextXAlignment = Enum.TextXAlignment.Left
+    Sep2.TextWrapped = true
+end
 
 		return main
 	end
