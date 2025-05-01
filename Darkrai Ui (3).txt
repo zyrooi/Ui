@@ -183,7 +183,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	ScrollTab.Active = true
 	ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ScrollTab.BackgroundTransparency = 1.000
-	ScrollTab.Size = UDim2.new(0, 150, 0, 330)
+	ScrollTab.Size = UDim2.new(0, 150, 0, 300)
 	ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
 	ScrollTab.ScrollBarThickness = 0
 
