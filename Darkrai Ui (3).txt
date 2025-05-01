@@ -104,7 +104,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Main.Position = UDim2.new(0.5, 0, 0.5, 0)
 	Main.Size = UDim2.new(0, 0, 0, 0)
 	
-	Main:TweenSize(UDim2.new(0, 656, 0, 300),"Out","Quad",0.4,true)
+	Main:TweenSize(UDim2.new(0, 656, 0, 335),"Out","Quad",0.4,true)
 
 	local MCNR = Instance.new("UICorner")
 	MCNR.Name = "MCNR"
@@ -171,7 +171,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Tab.Parent = Main
 	Tab.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Tab.Position = UDim2.new(0, 5, 0, 30)
-	Tab.Size = UDim2.new(0, 150, 0, 300)
+	Tab.Size = UDim2.new(0, 150, 0, 335)
 
 	local TCNR = Instance.new("UICorner")
 	TCNR.Name = "TCNR"
@@ -183,7 +183,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	ScrollTab.Active = true
 	ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ScrollTab.BackgroundTransparency = 1.000
-	ScrollTab.Size = UDim2.new(0, 150, 0, 275)
+	ScrollTab.Size = UDim2.new(0, 150, 0, 335)
 	ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
 	ScrollTab.ScrollBarThickness = 0
 
@@ -204,7 +204,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Page.Parent = Main
 	Page.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 	Page.Position = UDim2.new(0.245426834, 0, 0.075000003, 0)
-	Page.Size = UDim2.new(0, 490, 0, 255)
+	Page.Size = UDim2.new(0, 490, 0, 335)
 
 	local PCNR = Instance.new("UICorner")
 	PCNR.Name = "PCNR"
@@ -216,7 +216,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	MainPage.ClipsDescendants = true
 	MainPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	MainPage.BackgroundTransparency = 1.000
-	MainPage.Size = UDim2.new(0, 490, 0, 255)
+	MainPage.Size = UDim2.new(0, 490, 0, 335)
 
 	local PageList = Instance.new("Folder")
 	PageList.Name = "PageList"
