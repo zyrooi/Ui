@@ -995,6 +995,24 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
     Sep2.TextXAlignment = Enum.TextXAlignment.Left
     Sep2.TextWrapped = true
 end
+function main:Line()
+			local Linee = Instance.new("Frame")
+			local Line = Instance.new("Frame")
+			
+			Linee.Name = "Linee"
+			Linee.Parent = MainFramePage
+			Linee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+			Linee.BackgroundTransparency = 1.000
+			Linee.Position = UDim2.new(0, 0, 0.119999997, 0)
+			Linee.Size = UDim2.new(0, 470, 0, 20)
+			
+			Line.Name = "Line"
+			Line.Parent = Linee
+			Line.BackgroundColor3 = _G.Color
+			Line.BorderSizePixel = 0
+			Line.Position = UDim2.new(0, 0, 0, 10)
+			Line.Size = UDim2.new(0, 470, 0, 1)
+		end
 		return main
 	end
 	return uitab
