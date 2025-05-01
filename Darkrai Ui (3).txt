@@ -183,7 +183,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	ScrollTab.Active = true
 	ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ScrollTab.BackgroundTransparency = 1.000
-	ScrollTab.Size = UDim2.new(0, 150, 0, 300)
+	ScrollTab.Size = UDim2.new(0, 150, 0, 350)
 	ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
 	ScrollTab.ScrollBarThickness = 0
 
@@ -264,7 +264,7 @@ TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
 		TabButton.Size = UDim2.new(0, 130, 0, 23)
 		TabButton.Font = Enum.Font.GothamSemibold
 		TabButton.TextColor3 = Color3.fromRGB(225, 225, 225)
-		TabButton.TextSize = 18.000
+		TabButton.TextSize = 19.000
 		TabButton.TextTransparency = 0.500
       TabButton.BackgroundTransparency = 1
 
