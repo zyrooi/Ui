@@ -127,7 +127,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Logo.BackgroundTransparency = 1.000
 	Logo.Position = UDim2.new(0, 10, 0, 1)
 	Logo.Size = UDim2.new(0, 25, 0, 25)
-	Logo.Image = "rbxthumb://type=Asset&id=103635972484891&w=420&h=420"
+	Logo.Image = ""
 
 	local Name = Instance.new("TextLabel")
 	Name.Name = "Name"
@@ -149,7 +149,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.Position = UDim2.new(0, 110, 0, 0)
 	Hub.Size = UDim2.new(0, 81, 0, 27)
 	Hub.Font = Enum.Font.GothamSemibold
-	Hub.Text = "  | "..gamename
+	Hub.Text = ""
 	Hub.TextColor3 = Color3.fromRGB(147,112,219)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
@@ -244,7 +244,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				Main:TweenSize(UDim2.new(0, 0, 0, 0),"In","Quad",0.4,true)
 			else
 				uihide = false
-				Main:TweenSize(UDim2.new(0, 656, 0, 400),"Out","Quad",0.4,true)
+				Main:TweenSize(UDim2.new(0, 656, 0, 285),"Out","Quad",0.4,true)
 			end
 		end
 	end)
