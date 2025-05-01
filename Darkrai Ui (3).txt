@@ -183,7 +183,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	ScrollTab.Active = true
 	ScrollTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	ScrollTab.BackgroundTransparency = 1.000
-	ScrollTab.Size = UDim2.new(0, 150, 0, 285)
+	ScrollTab.Size = UDim2.new(0, 150, 0, 330)
 	ScrollTab.CanvasSize = UDim2.new(0, 0, 0, 0)
 	ScrollTab.ScrollBarThickness = 0
 
@@ -256,7 +256,9 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 		TabButton.Parent = ScrollTab
 		TabButton.Name = text.."Server"
 		TabButton.Text = text
-		TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+
+TabButton.Font = Enum.Font.GothamBold
+TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
       TabButton.BorderColor3 = Color3.fromRGB(147,112,219)
       TabButton.BorderSizePixel = 3
 		TabButton.Size = UDim2.new(0, 130, 0, 23)
@@ -991,7 +993,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
     Sep2.Font = Enum.Font.GothamBold
     Sep2.Text = text
     Sep2.TextColor3 = Color3.fromRGB(255, 255, 255)
-    Sep2.TextSize = 16.000
+    Sep2.TextSize = 20.000
     Sep2.TextXAlignment = Enum.TextXAlignment.Left
     Sep2.TextWrapped = true
 end
