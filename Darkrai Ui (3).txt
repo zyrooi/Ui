@@ -257,7 +257,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 		TabButton.Name = text.."Server"
 		TabButton.Text = text
 
-TabButton.Font = Enum.Font.GothamBold
+TabButton.TextFont = Enum.Font.GothamBold
 TabButton.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
       TabButton.BorderColor3 = Color3.fromRGB(147,112,219)
       TabButton.BorderSizePixel = 3
