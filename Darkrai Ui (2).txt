@@ -10,7 +10,7 @@ local PlaceName = game:GetService("MarketplaceService"):GetProductInfo(game.Plac
     wait(1)
 
 do local GUI = game.CoreGui:FindFirstChild("Darkrai");if GUI then GUI:Destroy();end;if _G.Color == nil then
-       _G.Color = Color3.fromRGB(173, 216, 230)
+       _G.Color = Color3.fromRGB(255, 0, 0)
    end 
 end
 
