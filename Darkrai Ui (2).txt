@@ -160,11 +160,11 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	BindButton.Parent = Top
 	BindButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 	BindButton.BackgroundTransparency = 1.000
-	BindButton.Position = UDim2.new(0.847561002, 0, 0, -70)
+	BindButton.Position = UDim2.new(0.847561002, 0, 0, -5)
 	BindButton.Size = UDim2.new(0, 100, 0, 27)
 	BindButton.Font = Enum.Font.GothamSemibold
 	BindButton.Text = "Version : Pro"
-	BindButton.TextColor3 = Color3.fromRGB(147,112,219)
+	BindButton.TextColor3 = Color3.fromRGB(173, 216, 230)
 	BindButton.TextSize = 13.000
 
 	local Tab = Instance.new("Frame")
