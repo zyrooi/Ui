@@ -394,7 +394,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				):Play()
 			end)
 			TextBtn.MouseButton1Click:Connect(function()
-				TextBtn.TextSize = 0
+				TextBtn.TextSize= 0
 				TweenService:Create(
 					TextBtn,
 					TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
@@ -403,102 +403,107 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				callback()
 			end)
 		end
-		function main:Toggle(text,config,callback)
-			config = config or false
-			local toggled = config
-			local Toggle = Instance.new("Frame")
-			local UICorner = Instance.new("UICorner")
-			local Button = Instance.new("TextButton")
-			local UICorner_2 = Instance.new("UICorner")
-			local Label = Instance.new("TextLabel")
-			local ToggleImage = Instance.new("Frame")
-			local UICorner_3 = Instance.new("UICorner")
-			local Circle = Instance.new("Frame")
-			local UICorner_4 = Instance.new("UICorner")
+                function main:Toggle(text, config, callback)
+	config = config or false
+	local toggled = config
 
-			Toggle.Name = "Toggle"
-			Toggle.Parent = MainFramePage
-			Toggle.BackgroundColor3 = _G.Color
-			Toggle.Size = UDim2.new(0, 470, 0, 31)
+	local Toggle = Instance.new("Frame")
+	local UICorner = Instance.new("UICorner")
+	local Button = Instance.new("TextButton")
+	local UICorner_2 = Instance.new("UICorner")
+	local Label = Instance.new("TextLabel")
+	local ToggleImage = Instance.new("Frame")
+	local UICorner_3 = Instance.new("UICorner")
+	local Circle = Instance.new("Frame")
+	local UICorner_4 = Instance.new("UICorner")
 
-			UICorner.CornerRadius = UDim.new(0, 5)
-			UICorner.Parent = Toggle
+	Toggle.Name = "Toggle"
+	Toggle.Parent = MainFramePage
+	Toggle.BackgroundColor3 = _G.Color
+	Toggle.Size = UDim2.new(0, 470, 0, 31)
 
-			Button.Name = "Button"
-			Button.Parent = Toggle
-			Button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-			Button.Position = UDim2.new(0, 1, 0, 1)
-			Button.Size = UDim2.new(0, 468, 0, 29)
-			Button.AutoButtonColor = false
-			Button.Font = Enum.Font.SourceSans
-			Button.Text = ""
-			Button.TextColor3 = Color3.fromRGB(0, 0, 0)
-			Button.TextSize = 11.000
+	UICorner.CornerRadius = UDim.new(0, 5)
+	UICorner.Parent = Toggle
 
-			UICorner_2.CornerRadius = UDim.new(0, 5)
-			UICorner_2.Parent = Button
+	Button.Name = "Button"
+	Button.Parent = Toggle
+	Button.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+	Button.Position = UDim2.new(0, 1, 0, 1)
+	Button.Size = UDim2.new(0, 468, 0, 29)
+	Button.AutoButtonColor = false
+	Button.Font = Enum.Font.SourceSans
+	Button.Text = ""
+	Button.TextColor3 = Color3.fromRGB(0, 0, 0)
+	Button.TextSize = 11.000
 
-			Label.Name = "Label"
-			Label.Parent = Toggle
-			Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-			Label.BackgroundTransparency = 1.000
-			Label.Position = UDim2.new(0, 1, 0, 1)
-			Label.Size = UDim2.new(0, 468, 0, 29)
-			Label.Font = Enum.Font.GothamSemibold
-			Label.Text = text
-			Label.TextColor3 = Color3.fromRGB(225, 225, 225)
-			Label.TextSize = 15.000
+	UICorner_2.CornerRadius = UDim.new(0, 5)
+	UICorner_2.Parent = Button
 
-			ToggleImage.Name = "ToggleImage"
-			ToggleImage.Parent = Toggle
-			ToggleImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
-			ToggleImage.Position = UDim2.new(0, 415, 0, 5)
-			ToggleImage.Size = UDim2.new(0, 45, 0, 20)
+	Label.Name = "Label"
+	Label.Parent = Toggle
+	Label.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	Label.BackgroundTransparency = 1.000
+	Label.Position = UDim2.new(0, 1, 0, 1)
+	Label.Size = UDim2.new(0, 468, 0, 29)
+	Label.Font = Enum.Font.GothamSemibold
+	Label.Text = text
+	Label.TextColor3 = Color3.fromRGB(225, 225, 225)
+	Label.TextSize = 15.000
 
-			UICorner_3.CornerRadius = UDim.new(0, 10)
-			UICorner_3.Parent = ToggleImage
+	ToggleImage.Name = "ToggleImage"
+	ToggleImage.Parent = Toggle
+	ToggleImage.BackgroundColor3 = Color3.fromRGB(225, 225, 225)
+	ToggleImage.Position = UDim2.new(0, 415, 0, 5)
+	ToggleImage.Size = UDim2.new(0, 45, 0, 20)
 
-			Circle.Name = "Circle"
-			Circle.Parent = ToggleImage
-			Circle.BackgroundColor3 = Color3.fromRGB(227, 60, 60)
-			Circle.Position = UDim2.new(0, 2, 0, 2)
-			Circle.Size = UDim2.new(0, 16, 0, 16)
+	UICorner_3.CornerRadius = UDim.new(0, 10)
+	UICorner_3.Parent = ToggleImage
 
-			UICorner_4.CornerRadius = UDim.new(0, 10)
-			UICorner_4.Parent = Circle
+	Circle.Name = "Circle"
+	Circle.Parent = ToggleImage
+	Circle.BackgroundColor3 = Color3.fromRGB(227, 60, 60)
+	Circle.Position = UDim2.new(0, 2, 0, 2)
+	Circle.Size = UDim2.new(0, 16, 0, 16)
 
-			Button.MouseButton1Click:Connect(function()
-				if toggled == false then
-					toggled = true
-					Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.2,true)
-					TweenService:Create(
-						Circle,
-						TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-						{BackgroundColor3 = _G.Color}
-					):Play()
-				else
-					toggled = false
-					Circle:TweenPosition(UDim2.new(0,2,0,2),"Out","Sine",0.2,true)
-					TweenService:Create(
-						Circle,
-						TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-						{BackgroundColor3 = Color3.fromRGB(227, 60, 110)}
-					):Play()
-				end
-				pcall(callback,toggled)
-			end)
+	UICorner_4.CornerRadius = UDim.new(0, 10)
+	UICorner_4.Parent = Circle
 
-			if config == true then
-				toggled = true
-				Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.4,true)
-				TweenService:Create(
-					Circle,
-					TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-					{BackgroundColor3 = _G.Color}
-				):Play()
-				pcall(callback,toggled)
-			end
+	local ToggleColorOn = Color3.fromRGB(102, 204, 255)
+	local ToggleColorOff = Color3.fromRGB(227, 60, 60)
+
+	Button.MouseButton1Click:Connect(function()
+		if toggled == false then
+			toggled = true
+			Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.2,true)
+			TweenService:Create(
+				Circle,
+				TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+				{BackgroundColor3 = ToggleColorOn}
+			):Play()
+		else
+			toggled = false
+			Circle:TweenPosition(UDim2.new(0,2,0,2),"Out","Sine",0.2,true)
+			TweenService:Create(
+				Circle,
+				TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+				{BackgroundColor3 = ToggleColorOff}
+			):Play()
 		end
+		pcall(callback,toggled)
+	end)
+
+	if config == true then
+		toggled = true
+		Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.4,true)
+		TweenService:Create(
+			Circle,
+			TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
+			{BackgroundColor3 = ToggleColorOn}
+		):Play()
+		pcall(callback,toggled)
+	end
+end
+
 		function main:Dropdown(text,option,callback)
 			local isdropping = false
 			local Dropdown = Instance.new("Frame")
