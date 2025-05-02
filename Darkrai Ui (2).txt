@@ -418,7 +418,7 @@ function main:Toggle(text, config, callback)
 
     Toggle.Name = "Toggle"
     Toggle.Parent = MainFramePage
-    Toggle.BackgroundColor3 = _G.Color
+    Toggle.BackgroundColor3 = Color3.fromRGB(227, 60, 60)
     Toggle.Size = UDim2.new(0, 470, 0, 31)
 
     UICorner.CornerRadius = UDim.new(0, 5)
@@ -474,7 +474,7 @@ function main:Toggle(text, config, callback)
             TweenService:Create(
                 Circle,
                 TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                {BackgroundColor3 = Color3.fromRGB(173, 216, 230)}
+                {BackgroundColor3 = Color3.fromRGB(0, 255, 0)}
             ):Play()
         else
             toggled = false
@@ -494,7 +494,7 @@ function main:Toggle(text, config, callback)
         TweenService:Create(
             Circle,
             TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-            {BackgroundColor3 = Color3.fromRGB(173, 216, 230)}
+            {BackgroundColor3 = Color3.fromRGB(0, 255, 0)}
         ):Play()
         pcall(callback, toggled)
     end
