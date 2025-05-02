@@ -403,7 +403,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				callback()
 			end)
 		end
-                function main:Toggle(text, config, callback)
+function main:Toggle(text, config, callback)
     config = config or false
     local toggled = config
     local Toggle = Instance.new("Frame")
@@ -474,7 +474,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
             TweenService:Create(
                 Circle,
                 TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                {BackgroundColor3 = Color3.fromRGB(100, 149, 237)}
+                {BackgroundColor3 = Color3.fromRGB(173, 216, 230)}
             ):Play()
         else
             toggled = false
@@ -482,7 +482,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
             TweenService:Create(
                 Circle,
                 TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-                {BackgroundColor3 = _G.Color}
+                {BackgroundColor3 = Color3.fromRGB(227, 60, 60)}
             ):Play()
         end
         pcall(callback, toggled)
@@ -494,7 +494,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
         TweenService:Create(
             Circle,
             TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
-            {BackgroundColor3 = Color3.fromRGB(100, 149, 237)}
+            {BackgroundColor3 = Color3.fromRGB(173, 216, 230)}
         ):Play()
         pcall(callback, toggled)
     end
