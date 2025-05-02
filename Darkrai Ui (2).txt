@@ -403,7 +403,8 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 				callback()
 			end)
 		end
-                function main:Toggle(text, config, callback)
+
+function main:Toggle(text, config, callback)
 	config = config or false
 	local toggled = config
 
@@ -419,7 +420,7 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 
 	Toggle.Name = "Toggle"
 	Toggle.Parent = MainFramePage
-	Toggle.BackgroundColor3 = _G.Color
+	Toggle.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 	Toggle.Size = UDim2.new(0, 470, 0, 31)
 
 	UICorner.CornerRadius = UDim.new(0, 5)
@@ -468,42 +469,34 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	UICorner_4.CornerRadius = UDim.new(0, 10)
 	UICorner_4.Parent = Circle
 
-	local ToggleColorOn = Color3.fromRGB(102, 204, 255)
-	local ToggleColorOff = Color3.fromRGB(227, 60, 60)
-
 	Button.MouseButton1Click:Connect(function()
 		if toggled == false then
 			toggled = true
-			Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.2,true)
+			Circle:TweenPosition(UDim2.new(0, 27, 0, 2), "Out", "Sine", 0.2, true)
 			TweenService:Create(
 				Circle,
-				TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-				{BackgroundColor3 = ToggleColorOn}
+				TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{BackgroundColor3 = Color3.fromRGB(132, 198, 255)}
 			):Play()
 		else
 			toggled = false
-			Circle:TweenPosition(UDim2.new(0,2,0,2),"Out","Sine",0.2,true)
+			Circle:TweenPosition(UDim2.new(0, 2, 0, 2), "Out", "Sine", 0.2, true)
 			TweenService:Create(
 				Circle,
-				TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-				{BackgroundColor3 = ToggleColorOff}
+				TweenInfo.new(0.4, Enum.EasingStyle.Quad, Enum.EasingDirection.Out),
+				{BackgroundColor3 = Color3.fromRGB(227, 60, 60)}
 			):Play()
 		end
-		pcall(callback,toggled)
+		pcall(callback, toggled)
 	end)
 
 	if config == true then
 		toggled = true
-		Circle:TweenPosition(UDim2.new(0,27,0,2),"Out","Sine",0.4,true)
-		TweenService:Create(
-			Circle,
-			TweenInfo.new(0.4,Enum.EasingStyle.Quad,Enum.EasingDirection.Out),
-			{BackgroundColor3 = ToggleColorOn}
-		):Play()
-		pcall(callback,toggled)
+		Circle.Position = UDim2.new(0, 27, 0, 2)
+		Circle.BackgroundColor3 = Color3.fromRGB(132, 198, 255)
+		pcall(callback, toggled)
 	end
 end
-
 		function main:Dropdown(text,option,callback)
 			local isdropping = false
 			local Dropdown = Instance.new("Frame")
