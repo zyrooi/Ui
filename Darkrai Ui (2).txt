@@ -155,17 +155,18 @@ function DarkraiX:Window(text,gamenme,logo,keybind)
 	Hub.TextSize = 17.000
 	Hub.TextXAlignment = Enum.TextXAlignment.Left
 
-	local BindButton = Instance.new("TextButton")
-	BindButton.Name = "BindButton"
-	BindButton.Parent = Top
-	BindButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	BindButton.BackgroundTransparency = 1.000
-	BindButton.Position = UDim2.new(0, 110, 0, 0)
-	BindButton.Size = UDim2.new(0, 100, 0, 29)
-	BindButton.Font = Enum.Font.GothamSemibold
-	BindButton.Text = "Version : Pro"
-	BindButton.TextColor3 = Color3.fromRGB(173, 216, 230)
-	BindButton.TextSize = 17.000
+        local BindButton = Instance.new("TextButton")
+BindButton.Name = "BindButton"
+BindButton.Parent = Top
+BindButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BindButton.BackgroundTransparency = 1.000
+BindButton.Size = UDim2.new(0, 100, 0, 29)
+BindButton.Font = Enum.Font.GothamSemibold
+BindButton.Text = ""
+BindButton.TextColor3 = Color3.fromRGB(173, 216, 230)
+BindButton.TextSize = 17.000
+BindButton.AnchorPoint = Vector2.new(1, 0)
+BindButton.Position = UDim2.new(1, 0, 0, -10)
 
 	local Tab = Instance.new("Frame")
 	Tab.Name = "Tab"
