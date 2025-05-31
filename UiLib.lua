@@ -1,5 +1,5 @@
 getgenv().Image = "rbxthumb://type=Asset&id=76608011467652&w=420&h=420"
-getgenv().ToggleUI = "G"
+getgenv().ToggleUI = "RightControl"
 
 task.spawn(function()
     if not getgenv().LoadedMobileUI then
